@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DetailView.swift
 //  HNews
 //
 //  Created by Gabriel Meira on 30.01.20.
@@ -8,14 +8,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DetailView: View {
+    var url: String?
+    
     var body: some View {
-        Text("Hello, World!")
+        WebView(urlString: url)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DetailView(url: "")
     }
 }

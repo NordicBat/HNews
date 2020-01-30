@@ -13,6 +13,10 @@
 		A56EE08823E3316700785EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56EE08723E3316700785EDB /* Assets.xcassets */; };
 		A56EE08B23E3316700785EDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56EE08A23E3316700785EDB /* Preview Assets.xcassets */; };
 		A56EE08E23E3316700785EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56EE08C23E3316700785EDB /* LaunchScreen.storyboard */; };
+		A56EE09723E3335400785EDB /* NetworkMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EE09623E3335400785EDB /* NetworkMananger.swift */; };
+		A56EE09923E334B800785EDB /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EE09823E334B800785EDB /* PostData.swift */; };
+		A56EE09E23E3399700785EDB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EE09D23E3399700785EDB /* DetailView.swift */; };
+		A56EE0A023E33E9F00785EDB /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EE09F23E33E9F00785EDB /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A56EE08A23E3316700785EDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A56EE08D23E3316700785EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56EE08F23E3316700785EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A56EE09623E3335400785EDB /* NetworkMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMananger.swift; sourceTree = "<group>"; };
+		A56EE09823E334B800785EDB /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		A56EE09D23E3399700785EDB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A56EE09F23E33E9F00785EDB /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		A56EE08023E3316500785EDB /* HNews */ = {
 			isa = PBXGroup;
 			children = (
+				A56EE09523E3333C00785EDB /* Models */,
+				A56EE09A23E3396900785EDB /* Views */,
 				A56EE08123E3316500785EDB /* AppDelegate.swift */,
 				A56EE08323E3316500785EDB /* SceneDelegate.swift */,
-				A56EE08523E3316500785EDB /* ContentView.swift */,
 				A56EE08723E3316700785EDB /* Assets.xcassets */,
 				A56EE08C23E3316700785EDB /* LaunchScreen.storyboard */,
 				A56EE08F23E3316700785EDB /* Info.plist */,
@@ -73,6 +82,25 @@
 				A56EE08A23E3316700785EDB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A56EE09523E3333C00785EDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A56EE09623E3335400785EDB /* NetworkMananger.swift */,
+				A56EE09823E334B800785EDB /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A56EE09A23E3396900785EDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A56EE08523E3316500785EDB /* ContentView.swift */,
+				A56EE09D23E3399700785EDB /* DetailView.swift */,
+				A56EE09F23E33E9F00785EDB /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56EE09923E334B800785EDB /* PostData.swift in Sources */,
+				A56EE09E23E3399700785EDB /* DetailView.swift in Sources */,
 				A56EE08223E3316500785EDB /* AppDelegate.swift in Sources */,
 				A56EE08423E3316500785EDB /* SceneDelegate.swift in Sources */,
 				A56EE08623E3316500785EDB /* ContentView.swift in Sources */,
+				A56EE09723E3335400785EDB /* NetworkMananger.swift in Sources */,
+				A56EE0A023E33E9F00785EDB /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
