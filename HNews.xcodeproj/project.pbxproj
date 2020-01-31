@@ -32,6 +32,7 @@
 		A56EE09823E334B800785EDB /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		A56EE09D23E3399700785EDB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A56EE09F23E33E9F00785EDB /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A576D08523E460190015DB01 /* HNews.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HNews.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		A56EE08023E3316500785EDB /* HNews */ = {
 			isa = PBXGroup;
 			children = (
+				A576D08523E460190015DB01 /* HNews.entitlements */,
 				A56EE09523E3333C00785EDB /* Models */,
 				A56EE09A23E3396900785EDB /* Views */,
 				A56EE08123E3316500785EDB /* AppDelegate.swift */,
@@ -316,7 +318,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HNews/HNews.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"HNews/Preview Content\"";
 				DEVELOPMENT_TEAM = 8SMHTAU2YY;
 				ENABLE_PREVIEWS = YES;
@@ -327,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.meiragabriel.HNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,7 +341,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HNews/HNews.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"HNews/Preview Content\"";
 				DEVELOPMENT_TEAM = 8SMHTAU2YY;
 				ENABLE_PREVIEWS = YES;
@@ -347,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.meiragabriel.HNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
